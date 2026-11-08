@@ -1,0 +1,15 @@
+# Base de datos y copias de seguridad (contienen el hash de la contraseña)
+private/*.sqlite
+private/*.sqlite-journal
+private/*.sqlite-wal
+private/*.sqlite-shm
+*.sqlite
+*.db
+*.bak
+*.log
+
+# Informes de pruebas y temporales
+informe*
+*.zip
+.DS_Store
+Thumbs.db
