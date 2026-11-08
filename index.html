@@ -2,62 +2,266 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Iglesia Cristiana Evangélica">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ICE · Iglesia Cristiana Evangélica</title>
+  <meta name="description" content="ICE, Iglesia Cristiana Evangélica. Un lugar para la fe, la esperanza y la comunidad.">
+  <meta name="theme-color" content="#0a1c26">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="ICE · Iglesia Cristiana Evangélica">
+  <meta property="og:title" content="ICE · Iglesia Cristiana Evangélica">
+  <meta property="og:description" content="Un lugar para la fe, la esperanza y la comunidad.">
+  <meta property="og:url" content="https://jahulin-dotcom.github.io/Iglesia/">
+  <meta property="og:image" content="https://jahulin-dotcom.github.io/Iglesia/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ICE · Iglesia Cristiana Evangélica">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://jahulin-dotcom.github.io/Iglesia/assets/og.jpg">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/site.css">
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="./">
-      <span class="brand-mark" aria-hidden="true">†</span>
-      <span><b>ICE</b><small>Iglesia Cristiana Evangélica</small></span>
-    </a>
-    <nav aria-label="Principal">
-      <a href="#comunidad">Conócenos</a>
-    </nav>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" id="inicio">
+    <div class="wrap header-inner">
+      <a class="brand" href="#inicio" aria-label="ICE, Iglesia Cristiana Evangélica — inicio">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <circle cx="24" cy="24" r="22.5" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+          <path d="M24 11v26M15.5 20.5h17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text">
+          <b>ICE</b>
+          <small>Iglesia Cristiana Evangélica</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Principal">
+        <a href="#comunidad">Conócenos</a>
+        <a href="#fe">Nuestra fe</a>
+        <a href="#vida">Comunidad</a>
+        <a class="nav-cta" href="#visitanos">Visítanos</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">FE · ESPERANZA · COMUNIDAD</p>
-        <h1>Un lugar para la fe y la comunidad</h1>
-        <p class="lead">Bienvenido a ICE. Un espacio para acercarnos a Dios, compartir la esperanza y caminar juntos.</p>
-        <a class="button gold" href="#comunidad">Conoce nuestra iglesia <span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="window-art" aria-hidden="true">
-        <div class="arch"><div class="rays"></div><div class="cross"></div><div class="steps"></div></div>
-        <span class="art-label">ICE</span>
+  <main id="contenido">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Fe · Esperanza · Comunidad</p>
+          <h1 id="hero-title">Un lugar para la fe y la comunidad</h1>
+          <p class="lead">Bienvenido a ICE. Un espacio para acercarnos a Dios, compartir la esperanza y caminar juntos.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#comunidad">Conoce nuestra iglesia</a>
+            <a class="btn btn-ghost" href="#fe">Nuestra fe</a>
+          </div>
+        </div>
+
+        <div class="window-art" aria-hidden="true">
+          <div class="glass">
+            <span class="glow"></span>
+            <span class="mullions"></span>
+            <span class="cross"></span>
+          </div>
+          <p class="art-label">Iglesia Cristiana Evangélica</p>
+        </div>
       </div>
     </section>
 
-    <section class="community" id="comunidad">
-      <div class="section-intro">
-        <p class="eyebrow">BIENVENIDOS A ICE</p>
-        <h2>Una comunidad.<br>Una misma esperanza.</h2>
+    <section class="values" aria-label="Nuestros pilares">
+      <div class="wrap values-grid">
+        <article class="value" data-reveal>
+          <span class="value-num">01</span>
+          <h2>Fe</h2>
+          <p>Creemos en Dios y en su Palabra como guía para la vida.</p>
+        </article>
+        <article class="value" data-reveal>
+          <span class="value-num">02</span>
+          <h2>Esperanza</h2>
+          <p>Un mensaje que sostiene y da sentido a cada día.</p>
+        </article>
+        <article class="value" data-reveal>
+          <span class="value-num">03</span>
+          <h2>Comunidad</h2>
+          <p>Un espacio para acompañarnos y crecer juntos.</p>
+        </article>
       </div>
-      <div class="section-list">
-        <article>
-          <span class="section-number">01</span>
-          <div>
-            <h3>Nuestra fe</h3>
-            <p>Jesucristo es el centro de nuestra fe. La Biblia nos invita a conocer a Dios y a vivir su amor en nuestra vida diaria.</p>
+    </section>
+
+    <section class="section" id="fe" aria-labelledby="fe-title">
+      <div class="wrap split">
+        <div class="split-copy" data-reveal>
+          <p class="eyebrow eyebrow-dark">Nuestra fe</p>
+          <h2 id="fe-title">Jesucristo, el centro de todo.</h2>
+          <p class="section-lead">Jesucristo es el centro de nuestra fe. La Biblia nos invita a conocer a Dios y a vivir su amor en nuestra vida diaria.</p>
+
+          <ul class="feature-list">
+            <li>
+              <span class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H19v16H6.5A2.5 2.5 0 0 0 4 21.5z"/>
+                  <path d="M4 19a2.5 2.5 0 0 1 2.5-2.5H19"/>
+                  <path d="M9 7h6"/>
+                </svg>
+              </span>
+              <span><strong>La Biblia</strong><small>La Palabra que nos guía y nos enseña.</small></span>
+            </li>
+            <li>
+              <span class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 21s-7.5-4.6-7.5-10A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7.5 4c0 5.4-7.5 10-7.5 10z"/>
+                </svg>
+              </span>
+              <span><strong>La oración</strong><small>Un espacio de encuentro con Dios.</small></span>
+            </li>
+            <li>
+              <span class="feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 20v-1.5a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4V20"/>
+                  <circle cx="9.5" cy="7" r="3.5"/>
+                  <path d="M17 11.5a3 3 0 1 0 0-6M21 20v-1.5a4 4 0 0 0-3-3.8"/>
+                </svg>
+              </span>
+              <span><strong>El amor al prójimo</strong><small>Servir y acompañar a quienes nos rodean.</small></span>
+            </li>
+          </ul>
+        </div>
+
+        <figure class="quote-card" data-reveal>
+          <div class="quote-art" aria-hidden="true">
+            <span class="quote-arch"></span>
           </div>
-        </article>
-        <article>
-          <span class="section-number">02</span>
-          <div>
-            <h3>Vida en comunidad</h3>
-            <p>Crecer juntos en la fe, acompañarnos y servir a los demás.</p>
-          </div>
-        </article>
+          <blockquote>
+            <p>Una comunidad.<br>Una misma esperanza.</p>
+          </blockquote>
+          <figcaption>ICE · Iglesia Cristiana Evangélica</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="comunidad" aria-labelledby="com-title">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow eyebrow-dark">Bienvenidos a ICE</p>
+          <h2 id="com-title">Una comunidad,<br>una misma esperanza.</h2>
+          <p class="section-lead">Crecer juntos en la fe, acompañarnos y servir a los demás.</p>
+        </div>
+
+        <div class="value-cards">
+          <article class="card" data-reveal>
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 21V9"/>
+                <path d="M12 9a4 4 0 0 0-4-4H5v3a4 4 0 0 0 4 4h3"/>
+                <path d="M12 13a4 4 0 0 1 4-4h3v2a4 4 0 0 1-4 4h-3"/>
+              </svg>
+            </span>
+            <h3>Crecer en la fe</h3>
+            <p>Conocer más de Dios y vivir su Palabra cada día.</p>
+          </article>
+          <article class="card" data-reveal>
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 0 0-7.1 7.1L12 21l8.8-8.3a5 5 0 0 0 0-7.1z"/>
+              </svg>
+            </span>
+            <h3>Acompañarnos</h3>
+            <p>Caminar juntos en cada etapa de la vida.</p>
+          </article>
+          <article class="card" data-reveal>
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/>
+                <circle cx="12" cy="12" r="3.2"/>
+              </svg>
+            </span>
+            <h3>Servir</h3>
+            <p>Poner nuestros dones al servicio de los demás.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="vida" aria-labelledby="vida-title">
+      <div class="wrap split split-reverse">
+        <div class="split-copy" data-reveal>
+          <p class="eyebrow eyebrow-dark">Vida en comunidad</p>
+          <h2 id="vida-title">Caminar juntos<br>hace la diferencia.</h2>
+          <p class="section-lead">Crecer juntos en la fe, acompañarnos y servir a los demás. Cada persona tiene un lugar en esta comunidad.</p>
+          <a class="link-arrow" href="#visitanos">Quiero conocerlos <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="panel" data-reveal>
+          <ul class="checked-list">
+            <li>Un lugar para crecer en la fe.</li>
+            <li>Personas que caminan contigo.</li>
+            <li>Oportunidades para servir.</li>
+          </ul>
+          <p class="panel-note">Una comunidad abierta, cercana y con esperanza.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit" id="visitanos" aria-labelledby="visit-title">
+      <div class="wrap visit-inner" data-reveal>
+        <p class="eyebrow">Nos encantaría conocerte</p>
+        <h2 id="visit-title">Te esperamos.</h2>
+        <p class="visit-lead">Muy pronto compartiremos aquí nuestra dirección y los horarios de reunión.</p>
+        <span class="chip">Dirección y horarios · Próximamente</span>
       </div>
     </section>
   </main>
 
-  <footer>
-    <span>ICE · Iglesia Cristiana Evangélica</span>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-light" href="#inicio" aria-label="ICE — inicio">
+          <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+            <circle cx="24" cy="24" r="22.5" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".45"/>
+            <path d="M24 11v26M15.5 20.5h17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+          </svg>
+          <span class="brand-text">
+            <b>ICE</b>
+            <small>Iglesia Cristiana Evangélica</small>
+          </span>
+        </a>
+        <p>Fe, esperanza y comunidad.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Enlaces del sitio">
+        <h2>Explorar</h2>
+        <a href="#comunidad">Conócenos</a>
+        <a href="#fe">Nuestra fe</a>
+        <a href="#vida">Comunidad</a>
+        <a href="#visitanos">Visítanos</a>
+      </nav>
+
+      <div class="footer-note">
+        <h2>ICE</h2>
+        <p>Iglesia Cristiana Evangélica</p>
+        <p>Sitio oficial</p>
+      </div>
+    </div>
+
+    <div class="wrap footer-bottom">
+      <span>© <span id="year">2026</span> ICE · Iglesia Cristiana Evangélica</span>
+      <a href="#inicio">Volver arriba</a>
+    </div>
   </footer>
+
+  <script src="assets/main.js" defer></script>
 </body>
 </html>
