@@ -20,6 +20,15 @@
   --line-soft: rgba(10, 28, 38, .07);
   --line-light: rgba(229, 199, 144, .28);
 
+  /* Fondo verde‑azul suave */
+  --mint: #eef9f1;
+  --aqua: #e8f6f4;
+  --sky: #e6effb;
+  --page-gradient:
+    radial-gradient(70rem 46rem at 6% -10%, rgba(197, 236, 210, .8), transparent 62%),
+    radial-gradient(62rem 44rem at 102% 10%, rgba(196, 222, 248, .75), transparent 60%),
+    linear-gradient(155deg, var(--mint) 0%, var(--aqua) 44%, var(--sky) 100%);
+
   /* Tipografía */
   --serif: "Fraunces", Georgia, "Times New Roman", serif;
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -44,11 +53,14 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 96px;
   -webkit-text-size-adjust: 100%;
+  background-color: var(--aqua);
 }
 
 body {
   margin: 0;
-  background: var(--cream);
+  background-color: var(--aqua);
+  background-image: var(--page-gradient);
+  background-attachment: fixed;
   color: var(--text);
   font-family: var(--sans);
   font-size: 16.5px;
@@ -175,7 +187,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(250, 246, 239, .82);
+  background: rgba(244, 251, 247, .78);
   backdrop-filter: saturate(140%) blur(14px);
   -webkit-backdrop-filter: saturate(140%) blur(14px);
   border-bottom: 1px solid transparent;
@@ -450,7 +462,10 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* Secciones -------------------------------------------------------------- */
 .section { padding-block: clamp(72px, 9vw, 118px); }
-.section-alt { background: var(--paper); border-block: 1px solid var(--line-soft); }
+.section-alt {
+  background: linear-gradient(180deg, rgba(255, 255, 255, .58), rgba(255, 255, 255, .24));
+  border-block: 1px solid var(--line-soft);
+}
 
 .split {
   display: grid;
@@ -577,7 +592,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .card {
   padding: clamp(26px, 3vw, 36px);
-  background: var(--cream);
+  background: rgba(255, 255, 255, .66);
   border: 1px solid var(--line-soft);
   border-radius: var(--radius);
   transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
@@ -607,7 +622,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 /* Panel de vida en comunidad */
 .panel {
   padding: clamp(30px, 4vw, 44px);
-  background: var(--paper);
+  background: rgba(255, 255, 255, .72);
   border: 1px solid var(--line-soft);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
@@ -807,7 +822,7 @@ html.js [data-reveal].is-visible { opacity: 1; transform: none; }
 }
 
 @media (max-width: 860px) {
-  .site-header { background: rgba(250, 246, 239, .96); }
+  .site-header { background: rgba(244, 251, 247, .96); }
   .header-inner { min-height: 74px; }
   .nav-toggle { display: block; }
 
@@ -819,7 +834,7 @@ html.js [data-reveal].is-visible { opacity: 1; transform: none; }
     display: grid;
     gap: 2px;
     padding: 12px var(--pad) 22px;
-    background: var(--cream);
+    background: linear-gradient(180deg, #f2fbf6, #e7f4f7);
     border-bottom: 1px solid var(--line);
     box-shadow: 0 24px 40px -30px rgba(10, 28, 38, .5);
     opacity: 0;
